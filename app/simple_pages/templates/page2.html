@@ -36,7 +36,7 @@
 
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-              <a href="javascript:history.back()" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+              <a href="base_test.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <svg class="bi me-2" width="40" height="32"></svg>
                 <span class="fs-4">Charles' Site</span>
               </a>
@@ -68,11 +68,23 @@
           <dd>Docker Images are files that are used to execute code found
           in a Docker Container.</dd>
           <dt>Link to Project Repository</dt>
-          <dd></dd>
-            <dt>Docker Commands</dt>
-            <dd></dd>
+          <dd><a href="https://hub.docker.com/layers/cle4/docker_flask/master/images/sha256-ab1eae2fe3fcf0cf1b78f9aa001209bccb5054350f1e4c63a9eb7d644a20971c?context=explore">
+          Click Here
+          </a>
+          </dd>
+            <dt>Docker Commands Known</dt>
+            <dd>docker run- | creates a container from an image and starts the container with the commands given.</dd>
+            <dd>docker build- | creates an image from the code given.</dd>
+            <dd>docker images- | checks the current images on our local machine. </dd>
+            <dd>docker ps- | this lists all of the running containers on the local machine.</dd>
+            <dd>docker stop- | this stops any container specified with their id/name. </dd>
+            <dd>docker restart- | this stops and starts the specified container. </dd>
+            <dd>docker rm- | this removes the specified container.</dd>
+            <dd>docker pull- | this pulls images from the docker repository.</dd>
             <dt>Explanation of starting Project and Accessing Container</dt>
-            <dd></dd>
+            <dd>In order to start the Project, one first needs the code. To get the code, you can use docker pull cle4/docker_flask:master
+            to pull the needed code. once you have the code, you can use docker run -p 80:80 cle4/docker_flask to construct a container
+                from the image, and set it to the localhost port, allowing you to see what the container builds.</dd>
         </dl>
 
       </article>

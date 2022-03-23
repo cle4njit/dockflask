@@ -42,7 +42,7 @@
               </a>
 
               <ul class="nav nav-pills">
-                <li class="nav-item"><a href="javascript:history.back()" class="nav-link" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="base_test.html" class="nav-link" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="/app/simple_pages/templates/page1.html" class="nav-link">Git</a></li>
                 <li class="nav-item"><a href="/app/simple_pages/templates/page2.html" class="nav-link">Docker</a></li>
                 <li class="nav-item"><a href="/app/simple_pages/templates/page3.html" class="nav-link">Python / Flask</a></li>
@@ -50,7 +50,40 @@
               </ul>
             </header>
         </div>
+     <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        Continuous Integration / Deployment
+      </h3>
 
+      <article class="blog-post">
+        <h2 class="blog-post-title">Explanations</h2>
+
+        <dl>
+          <dt>Project Setup through Github Actions</dt>
+          <dd>We were able to set up the project by enabling Repository Secrets and linking to them through our code,
+          setting up a docker password and username as well as an api key to heroku to allow full access to any service
+          we would need in the project.</dd>
+          <dt>Code Review</dt>
+          <dd>By using a development server it's easier for developers to see how their code will run and react to different
+          machines running it without the risk of messing up and breaking the main server, giving them a playtesting ground
+          to run tests on their code.</dd>
+            <dt>Deploying master to production</dt>
+            <dd>master can be deployed to a production server when initiated properly with code, as we needed to tag the push
+            v* in order to deploy the master to the production app.</dd>
+            <dt>Deploying to DockerHub when master is updated</dt>
+            <dd>In order to deploy an image to dockerhub when master is updated, we needed to use github workflows to
+            tell the code to build a container on  docker. For that, we needed to update and make sure ubunut was installed to run on,
+            and then that we would be logged in through our secret actions. Then, we built a command to build and push the image to
+            Docker.</dd>
+        </dl>
+
+      </article>
+
+
+    </div>
+
+      </div>
 
     </main>
     <!-- Option 1: Bootstrap Bundle with Popper -->

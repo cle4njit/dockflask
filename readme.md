@@ -1,12 +1,12 @@
-# Calculator Project Setup
-[![Build Status](https://app.travis-ci.com/kaw393939/calc2.svg?branch=main)](https://app.travis-ci.com/kaw393939/calc2)
+# Project Setup
 
-To run tests, Lint, and Coverage report use this command:
+[![Production Workflow](https://github.com/cle4njit/dockflask/actions/workflows/prod.yml/badge.svg)](https://github.com/cle4njit/dockflask/actions/workflows/prod.yml)
 
-pytest  --pylint --cov
+* [Production Deployment](https://cle4-prod.herokuapp.com/)
 
-.pylintrc is the config for pylint
-.coveragerc is the config for coverage
-setup.py is a config file for pytest
 
-this is a test (o-o)> asdfasdf
+[![Development Workflow](https://github.com/cle4njit/dockflask/actions/workflows/dev.yml/badge.svg)](https://github.com/cle4njit/dockflask/actions/workflows/dev.yml)
+
+* [Developmental Deployment](https://cle4-dev.herokuapp.com/)
+
+No clue as to why my page would receive a 404 every time I tried to push and get it to run on heroku, works locally

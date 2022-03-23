@@ -36,7 +36,7 @@
 
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-              <a href="javascript:history.back()" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+              <a href="base_test.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <svg class="bi me-2" width="40" height="32"></svg>
                 <span class="fs-4">Charles' Site</span>
               </a>
@@ -50,7 +50,80 @@
               </ul>
             </header>
         </div>
+    <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        Docker
+      </h3>
 
+      <article class="blog-post">
+        <h2 class="blog-post-title">Explanations</h2>
+
+        <dl>
+          <dt>Testing with pytest; examples with code</dt>
+          <dd>pytest testing allowed for us to make sure the pages were loading properly and that there were no problems.</dd>
+            <dd>Some example code of what was done being:</dd>
+            <dd>def test_request_about(client):
+            <dd>"""This makes the about page"""</dd>
+            <dd>response = client.get("/about")</dd>
+            <dd>assert response.status_code == 200</dd>
+            <dd>assert b"About Page" in response.data</dd>
+            </dd>
+          <dt>Simple Pages creation & testing</dt>
+            <dd>simple pages was created by pulling the blueprint formula from flask, which when used in tandem with the html pages created in the templates folder, and supporting css and images
+            in the static folder allowed for me to check that everything was working as intended when ran.</dd>
+
+          <dt>Project Outline</dt>
+            <dd>
+                <ul>
+                <li> dockflask <-- root of the project</li>
+                    <ul>
+                        <li>.github <-- contains the workflows folder for GitHub to use</li>
+                        <ul>
+                            <li>workflows <-- integration for github workflows to run tests on every push to GitHub</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>app <-- contains html and css files as well as simple_pages to run the application.</li>
+                        <ul>
+                            <li>simple_pages <-- contains the html files and tests for them. </li><ul><li>templates <-- contains all html files.</li></ul>
+                            <li>static <-- contains the css and image files required for the html files.</li><ul><li>css <-- contains all css files for the project</li></ul><ul><li>images <-- contains all images required for the project</li></ul>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>calculator <-- contains calculation and operation files for the calculator.</li>
+                        <ul>
+                            <li>calculation <-- contains the source code to run addition, subtracton and multiplication constructor methods.</li>
+                            <li>operations <-- contains the static methods which call on the constructor methods to output desired results. </li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>.tests <-- contains all the test python files from calculator to homepage tests, which ensure everything is working as intended. </li>
+                    </ul>
+                    <ul>
+                        <li>.dockerignore <-- tells Docker what command to ignore within the code.</li>
+                        <li>.gitignore <-- tells git what commands to ignore in the code.</li>
+                        <li>docker-compose.yml <-- contains the settings to develop on your local machine</li>
+                        <li>Dockerfile <-- contains all the commands required to build images.</li>
+                        <li>heroku.yml <-- allows one to construct docker images on heroku.</li>
+                        <li>pytest.ini <-- reroutes testpaths to tests and filterwarnings to ignore</li>
+                        <li>readme.md <-- comments and instructions to any viewers of the repository / file.</li>
+                        <li>requirements.txt <-- tells the developer what requirements are needed to work on the code.</li>
+                    </ul>
+                </ul>
+                <ul>
+
+                </ul>
+            </dd>
+
+        </dl>
+
+      </article>
+
+
+    </div>
+
+      </div>
 
     </main>
     <!-- Option 1: Bootstrap Bundle with Popper -->
