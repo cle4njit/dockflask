@@ -9,4 +9,4 @@
 
 * [Developmental Deployment](https://cle4-dev.herokuapp.com/)
 
-No clue as to why my page would recieve a 404 every time I tried to push and get it to run on heroku, works locally
+No clue as to why my page would receive a 404 every time I tried to push and get it to run on heroku, works locally
